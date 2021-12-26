@@ -42,8 +42,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 97.116.99.193
+Only the Host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 40.122.44.25
 
 
 Machines within the network can only be accessed by the JumpBox.
