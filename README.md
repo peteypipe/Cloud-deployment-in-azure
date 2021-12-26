@@ -23,12 +23,14 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly efficient, in addition to restricting downtime in the network.
+- Load balancers provide a level of security in their ability to protect against DDoS attacks by spreading the traffic between mutliple servers. They provide a layer of redundancy to a network by connecting to several servers at one time and allowing for servers to be taken down or added without disrupting user access. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system files.
 - _TODO: What does Filebeat watch for?_
+- filebeat monitor and centralizes log data and forwards data that you specify for indexing. 
 - _TODO: What does Metricbeat record?_
+- Metricbeat records metrics for the OS and services running on the server that it is monitoring. 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -39,7 +41,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | WEB 1    | DVMA     | 10.0.0.5   | Linux            |
 | WEB 2    | DVMA     | 10.0.0.6   | Linux            |
 | ELK      | MONITOR  | 10.1.0.4   | Linux            |
-
+| LoadBalance| Traffic| 168.61.213.189| Linux 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
