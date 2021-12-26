@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![diagram](https://raw.githubusercontent.com/peteypipe/Cloud-deployment-in-azure/main/azure%20no%20elk.JPG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the  file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -47,23 +47,22 @@ Only the Host machine can accept connections from the Internet. Access to this m
 
 
 Machines within the network can only be accessed by the JumpBox.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- The elk VM is only accessible via the JumpBox (10.0.0.4) and then the docker container. Once connected to the docker container, users can ssh into the elk vm. 
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 97.116.99.193        |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 40.122.44.25         |
+| Web 1    | No                  | 10.0.0.4             |
+| Web 2    | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the playbook can be used to configure multiple servers in the same manner. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc
 - ...
 - ...
 
@@ -73,10 +72,11 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+-Web-1 10.0.0.5
+-Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+-
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
