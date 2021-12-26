@@ -2,7 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![diagram](https://raw.githubusercontent.com/peteypipe/Cloud-deployment-in-azure/main/azure%20no%20elk.JPG)
+![diagram](https://raw.githubusercontent.com/peteypipe/Cloud-deployment-in-azure/main/azure%20with%20elk.JPG
+)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the  file may be used to install only certain pieces of it, such as Filebeat.
 
