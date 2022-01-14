@@ -1,0 +1,5 @@
+MetricBeat Example:
+@timestamp:Dec 26, 2021 @ 17:36:36.182 docker.info.id:OBLG:ILDC:F3DK:NZNB:LL6W:5SB2:7MC4:GR7J:BPKW:EGE5:SLDI:KAJF docker.info.containers.stopped:0 docker.info.containers.total:1 docker.info.containers.running:1 docker.info.containers.paused:0 docker.info.images:1 event.dataset:docker.info 
+event.module:docker event.duration:8.5 ecs.version:1.4.0 host.os.platform:ubuntu host.os.version:20.04.3 LTS (Focal Fossa) host.os.family:debian host.os.name:Ubuntu host.os.kernel:5.11.0-1022-azure host.os.codename:focal host.id:2fb28d878c40430baf3a609c446df6bb host.containerized:false 
+host.name:web-1 host.hostname:web-1 host.architecture:x86_64 agent.type:metricbeat agent.ephemeral_id:002b4a2f-e254-4e99-a1dc-c3b71099a513 agent.hostname:web-1 agent.id:ddc705f3-016b-4dbb-9f08-ff275b57c685 agent.version:7.6.1 cloud.machine.type:Standard_B1ms cloud.region:centralus 
+cloud.instance.id:effdefd9-44ad-433d-9d26-a343e4e10d8a cloud.instance.name:web-1 cloud.provider:az metricset.period:10,000 metricset.name:info service.type:docker service.address:/var/run/docker.sock _id:fk4a-X0BlvIxNHJiaFA6 _type:_doc _index:metricbeat-7.6.1-2021.12.17-000001 _score: -

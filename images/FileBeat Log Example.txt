@@ -1,0 +1,7 @@
+FileBeat Example:
+agent.hostname:web-1 agent.id:e53fbdde-8724-4351-a5a7-b71d97e02d28 agent.type:filebeat agent.ephemeral_id:67ab21d4-c541-4df9-91d0-e9340ba30f12 agent.version:7.6.1 process.name:metricbeat process.pid:708 log.file.path:/var/log/syslog log.offset:1,232,352 
+fileset.name:syslog message:2021-12-26T22:11:22.358Z#011INFO#011[monitoring]#011log/log.go:145#011Non-zero metrics in the last 30s#011{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":42320,"time":{"ms":80}},"total":{"ticks":108110,"time":{"ms":258},"value":108110},
+"user":{"ticks":65790,"time":{"ms":178}}},"handles":{"limit":{"hard":524288,"soft":1024},"open":15},"info":{"ephemeral_id":"002b4a2f-e254-4e99-a1dc-c3b71099a513","uptime":{"ms":12902281}},"memstats":{"gc_next":15040112,"memory_alloc":8564184,"memory_total":16930183880},"runtime":{"goroutines":67}},
+"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":67,"batches":9,"total":67},"read":{"bytes":3561},"write":{"bytes":123356}},"pipeline":{"clients":4,"events":{"active":0,"published":67,"total":67},"queue":{"acked":67}}},"metricbeat":{"docker":{"container":{"events":3,"success":3},
+"cpu":{"events":3,"success":3},"diskio"
+-E.x metricbeat
